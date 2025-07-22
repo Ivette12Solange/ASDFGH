@@ -1305,10 +1305,10 @@
       // Cargar capas adicionales
       showLoading('Cargando capas adicionales...');
       await Promise.allSettled([
-        loadAdditionalLayer('cantones', 'cantones', '#3182ce', 'nombre_can'), // Updated to use 'nombre_can'
         loadAdditionalLayer('vias', 'vias', '#38a169', 'nombre_vias'), // Updated to use 'nombre_vias'
         loadAdditionalLayer('poblaciones', 'poblaciones2', '#d69e2e'),
-        loadAdditionalLayer('aeropuertos', 'aeropuertos', '#805ad5')
+        loadAdditionalLayer('aeropuertos', 'aeropuertos', '#805ad5'),
+        loadAdditionalLayer('cantones', 'cantones', '#3182ce', 'nombre_can'), // Updated to use 'nombre_can'
       ]);
 
       // Cargar reportes de emergencia desde Supabase
